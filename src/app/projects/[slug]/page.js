@@ -1,155 +1,47 @@
-import { notFound } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, ExternalLink, Github, Calendar, User, Target, Lightbulb } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-
-const projectsData = {
-  "ecommerce-moderno": {
-    title: "E-commerce Moderno",
-    description: "Una tienda online completa construida con las últimas tecnologías web.",
-    longDescription:
-      "Este proyecto representa una solución completa de e-commerce que incluye todas las funcionalidades esenciales para una tienda online moderna. Desde la gestión de productos hasta el procesamiento de pagos, cada aspecto ha sido cuidadosamente diseñado para ofrecer la mejor experiencia tanto a usuarios como administradores.",
-    images: [
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-    ],
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
-    demoUrl: "https://demo-ecommerce.vercel.app",
-    githubUrl: "https://github.com/usuario/ecommerce",
-    duration: "3 meses",
-    role: "Full Stack Developer",
-    objectives: [
-      "Crear una experiencia de compra fluida y segura",
-      "Implementar un sistema de pagos robusto con Stripe",
-      "Desarrollar un panel de administración completo",
-      "Optimizar el rendimiento y SEO",
-    ],
-    features: [
-      "Catálogo de productos con filtros avanzados",
-      "Carrito de compras persistente",
-      "Sistema de pagos con Stripe",
-      "Panel de administración",
-      "Gestión de inventario",
-      "Sistema de órdenes y facturación",
-      "Autenticación de usuarios",
-      "Diseño responsive",
-    ],
-    lessons: [
-      "Integración completa de sistemas de pago",
-      "Gestión de estado complejo en aplicaciones grandes",
-      "Optimización de rendimiento en aplicaciones con muchos datos",
-      "Implementación de mejores prácticas de seguridad",
-    ],
-  },
-  "dashboard-analytics": {
-    title: "Dashboard Analytics",
-    description: "Panel de control con métricas y análisis en tiempo real.",
-    longDescription:
-      "Un dashboard completo para visualización de datos y análisis de métricas empresariales. Incluye gráficos interactivos, filtros avanzados y capacidades de exportación para facilitar la toma de decisiones basada en datos.",
-    images: [
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-    ],
-    tags: ["React", "Chart.js", "Node.js", "PostgreSQL", "Express"],
-    demoUrl: "https://dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/usuario/dashboard",
-    duration: "2 meses",
-    role: "Frontend & Backend Developer",
-    objectives: [
-      "Visualizar datos complejos de forma clara",
-      "Crear gráficos interactivos y responsivos",
-      "Implementar filtros y búsquedas avanzadas",
-      "Optimizar el rendimiento con grandes volúmenes de datos",
-    ],
-    features: [
-      "Gráficos interactivos con Chart.js",
-      "Filtros por fecha y categorías",
-      "Exportación de reportes en PDF",
-      "Métricas en tiempo real",
-      "Dashboard personalizable",
-      "API REST para datos",
-      "Autenticación y roles de usuario",
-      "Diseño responsive",
-    ],
-    lessons: [
-      "Optimización de consultas de base de datos",
-      "Manejo eficiente de grandes volúmenes de datos",
-      "Creación de visualizaciones efectivas",
-      "Implementación de actualizaciones en tiempo real",
-    ],
-  },
-  "app-tareas": {
-    title: "App de Gestión de Tareas",
-    description: "Aplicación completa para organizar y gestionar tareas personales y de equipo.",
-    longDescription:
-      "Una aplicación moderna de gestión de tareas que combina simplicidad con funcionalidades avanzadas. Permite organizar tareas, colaborar en equipo y mantener la productividad con recordatorios y sincronización en tiempo real.",
-    images: [
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-      "/placeholder.svg?height=400&width=800",
-    ],
-    tags: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript", "PWA"],
-    demoUrl: "https://tasks-app.vercel.app",
-    githubUrl: "https://github.com/usuario/tasks-app",
-    duration: "6 semanas",
-    role: "Full Stack Developer",
-    objectives: [
-      "Crear una interfaz intuitiva para gestión de tareas",
-      "Implementar colaboración en tiempo real",
-      "Desarrollar funcionalidades offline",
-      "Optimizar la experiencia móvil",
-    ],
-    features: [
-      "Creación y edición de tareas",
-      "Categorías y etiquetas personalizables",
-      "Recordatorios y notificaciones",
-      "Colaboración en equipo",
-      "Sincronización en tiempo real",
-      "Modo offline (PWA)",
-      "Búsqueda y filtros avanzados",
-      "Estadísticas de productividad",
-    ],
-    lessons: [
-      "Implementación de Progressive Web Apps",
-      "Sincronización de datos en tiempo real",
-      "Optimización para dispositivos móviles",
-      "Gestión de estado con Context API",
-    ],
-  },
-}
+import { notFound } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import {
+  ArrowLeft,
+  ExternalLink,
+  Github,
+  Calendar,
+  User,
+  Target,
+  Lightbulb,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import DatosPortafolio from "@/app/Datos/datos-para-portafolio";
 
 export async function generateStaticParams() {
-  return Object.keys(projectsData).map((slug) => ({
+  return Object.keys(DatosPortafolio.projectsData).map((slug) => ({
     slug: slug,
-  }))
+  }));
 }
 
 export async function generateMetadata({ params }) {
-  const project = projectsData[params.slug]
+  const project = DatosPortafolio.projectsData[params.slug];
 
   if (!project) {
     return {
       title: "Proyecto no encontrado",
-    }
+    };
   }
 
   return {
     title: `${project.title} | Mi Portafolio`,
     description: project.description,
-  }
+  };
 }
 
 export default function ProjectDetailPage({ params }) {
-  const project = projectsData[params.slug]
+  const project = DatosPortafolio.projectsData[params.slug];
 
   if (!project) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -165,7 +57,9 @@ export default function ProjectDetailPage({ params }) {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-        <p className="text-xl text-muted-foreground mb-6">{project.description}</p>
+        <p className="text-xl text-muted-foreground mb-6">
+          {project.description}
+        </p>
 
         <div className="flex flex-wrap gap-2 mb-6">
           {project.tags.map((tag) => (
@@ -205,7 +99,10 @@ export default function ProjectDetailPage({ params }) {
           {project.images.length > 1 && (
             <div className="grid grid-cols-2 gap-4">
               {project.images.slice(1).map((image, index) => (
-                <div key={index} className="aspect-video relative overflow-hidden rounded-lg">
+                <div
+                  key={index}
+                  className="aspect-video relative overflow-hidden rounded-lg"
+                >
                   <Image
                     src={image || "/placeholder.svg"}
                     alt={`${project.title} - Vista ${index + 2}`}
@@ -264,7 +161,9 @@ export default function ProjectDetailPage({ params }) {
           <CardTitle>Descripción del Proyecto</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-muted-foreground leading-relaxed">{project.longDescription}</p>
+          <p className="text-muted-foreground leading-relaxed">
+            {project.longDescription}
+          </p>
         </CardContent>
       </Card>
 
@@ -329,7 +228,9 @@ export default function ProjectDetailPage({ params }) {
       <div className="text-center">
         <Separator className="mb-8" />
         <h3 className="text-2xl font-bold mb-4">¿Te interesa este proyecto?</h3>
-        <p className="text-muted-foreground mb-6">Puedes ver el código fuente o probar la demo en vivo</p>
+        <p className="text-muted-foreground mb-6">
+          Puedes ver el código fuente o probar la demo en vivo
+        </p>
         <div className="flex gap-4 justify-center">
           <Button asChild size="lg">
             <Link href={project.demoUrl} target="_blank">
@@ -346,5 +247,5 @@ export default function ProjectDetailPage({ params }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

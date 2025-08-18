@@ -1,65 +1,36 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { ArrowRight, Github, Linkedin, Mail, Code, Palette, Database } from "lucide-react"
-import Link from "next/link"
-import { ProjectCard } from "@/components/project-card"
-
-const skills = [
-  { name: "JavaScript", category: "frontend" },
-  { name: "React", category: "frontend" },
-  { name: "Next.js", category: "frontend" },
-  { name: "Tailwind CSS", category: "frontend" },
-  { name: "Node.js", category: "backend" },
-  { name: "Express", category: "backend" },
-  { name: "MongoDB", category: "database" },
-  { name: "PostgreSQL", category: "database" },
-  { name: "Git", category: "tools" },
-  { name: "Vercel", category: "tools" },
-]
-
-const featuredProjects = [
-  {
-    id: 1,
-    title: "E-commerce Moderno",
-    description: "Tienda online completa con carrito de compras, pagos y panel de administración.",
-    image: "/placeholder.svg?height=200&width=400",
-    tags: ["Next.js", "Stripe", "MongoDB"],
-    demoUrl: "https://demo-ecommerce.vercel.app",
-    githubUrl: "https://github.com/usuario/ecommerce",
-    slug: "ecommerce-moderno",
-  },
-  {
-    id: 2,
-    title: "Dashboard Analytics",
-    description: "Panel de control con gráficos interactivos y métricas en tiempo real.",
-    image: "/placeholder.svg?height=200&width=400",
-    tags: ["React", "Chart.js", "API"],
-    demoUrl: "https://dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/usuario/dashboard",
-    slug: "dashboard-analytics",
-  },
-  {
-    id: 3,
-    title: "App de Tareas",
-    description: "Aplicación de gestión de tareas con autenticación y sincronización.",
-    image: "/placeholder.svg?height=200&width=400",
-    tags: ["Next.js", "Supabase", "Tailwind"],
-    demoUrl: "https://tasks-app.vercel.app",
-    githubUrl: "https://github.com/usuario/tasks-app",
-    slug: "app-tareas",
-  },
-]
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Mail,
+  Code,
+  Code2,
+  Palette,
+  Database,
+  Bot,
+} from "lucide-react";
+import Link from "next/link";
+import { ProjectCard } from "@/components/project-card";
+import DatosPortafolio from "@/app/Datos/datos-para-portafolio";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
+      {/* Hero*/}
       <section className="py-20 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="container mx-auto max-w-4xl text-center">
           <Avatar className="w-32 h-32 mx-auto mb-8">
-            <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Mi foto" />
+            <AvatarImage src="" alt="Mi foto" />
             <AvatarFallback className="text-2xl">JM</AvatarFallback>
           </Avatar>
 
@@ -68,7 +39,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Desarrollador Full Stack especializado en crear experiencias web modernas y funcionales
+            Desarrollador Full Stack | Desarrollo de software
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -78,7 +49,12 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 bg-transparent"
+            >
               <Link href="mailto:jovanymolina822@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Contactar
@@ -93,7 +69,10 @@ export default function HomePage() {
               </Link>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <Link href="https://www.linkedin.com/in/jovany-molina-vieyra/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/jovany-molina-vieyra/"
+                target="_blank"
+              >
                 <Linkedin className="h-5 w-5" />
               </Link>
             </Button>
@@ -101,20 +80,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12">Sobre Mí</h2>
           <Card className="p-8">
             <CardContent className="text-center">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Soy un desarrollador apasionado por crear soluciones digitales que impacten positivamente en la vida de
-                las personas. Con experiencia en tecnologías modernas como React, Next.js y Node.js, me especializo en
-                desarrollar aplicaciones web escalables y con excelente experiencia de usuario.
+                Soy una persona proactiva y comprometida tanto con mi
+                aprendizaje como con mis responsabilidades personales y
+                profesionales. Me apasiona aprender continuamente, no solo sobre
+                tecnología, sino también sobre diversos aspectos de la vida.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                Siempre estoy aprendiendo nuevas tecnologías y mejores prácticas para mantenerme actualizado en este
-                mundo tecnológico en constante evolución.
+                Me enfoco en el desarrollo web y de software, creando soluciones
+                digitales eficientes, escalables y orientadas al usuario.
+                Disfruto colaborar con otras personas, compartir conocimientos y
+                trabajar en equipo para alcanzar objetivos en común.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                Mi enfoque constante es la mejora continua me impulsa a
+                mantenerme actualizado con nuevas herramientas, lenguajes y
+                buenas prácticas en el desarrollo moderno.
               </p>
             </CardContent>
           </Card>
@@ -124,18 +111,22 @@ export default function HomePage() {
       {/* Skills Section */}
       <section className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-12">Habilidades Técnicas</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Habilidades Técnicas
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
               <CardHeader className="text-center">
                 <Code className="h-12 w-12 mx-auto mb-4 text-primary" />
                 <CardTitle>Frontend</CardTitle>
-                <CardDescription>Interfaces modernas y responsivas</CardDescription>
+                <CardDescription>
+                  Interfaces modernas y responsivas
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {skills
+                  {DatosPortafolio.skills
                     .filter((skill) => skill.category === "frontend")
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">
@@ -148,14 +139,62 @@ export default function HomePage() {
 
             <Card>
               <CardHeader className="text-center">
-                <Database className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <CardTitle>Backend & Database</CardTitle>
-                <CardDescription>APIs robustas y bases de datos</CardDescription>
+                <Code2 className="h-12 w-12 mx-auto mb-4 text-primary" />
+                <CardTitle>Backend</CardTitle>
+                <CardDescription>
+                  Lógica del servidor y manejo de datos
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {skills
-                    .filter((skill) => ["backend", "database"].includes(skill.category))
+                  {DatosPortafolio.skills
+                    .filter((skill) =>
+                      ["backend", "database"].includes(skill.category)
+                    )
+                    .map((skill) => (
+                      <Badge key={skill.name} variant="secondary">
+                        {skill.name}
+                      </Badge>
+                    ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="text-center">
+                <Database className="h-12 w-12 mx-auto mb-4 text-primary" />
+                <CardTitle>Bases de Datos</CardTitle>
+                <CardDescription>Almacenamiento y consultas</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {DatosPortafolio.skills
+                    .filter((skill) =>
+                      ["base de datos", "db", "DB"].includes(skill.category)
+                    )
+                    .map((skill) => (
+                      <Badge key={skill.name} variant="secondary">
+                        {skill.name}
+                      </Badge>
+                    ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="text-center">
+                <Bot className="h-12 w-12 mx-auto mb-4 text-primary" />
+                <CardTitle>Automatización</CardTitle>
+                <CardDescription>
+                  Automatización de procesos y tareas
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {DatosPortafolio.skills
+                    .filter((skill) =>
+                      ["automatizacion"].includes(skill.category)
+                    )
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">
                         {skill.name}
@@ -173,7 +212,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {skills
+                  {DatosPortafolio.skills
                     .filter((skill) => skill.category === "tools")
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">
@@ -192,11 +231,13 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Proyectos Destacados</h2>
-            <p className="text-lg text-muted-foreground">Algunos de mis trabajos más recientes</p>
+            <p className="text-lg text-muted-foreground">
+              Algunos de mis trabajos más recientes
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredProjects.map((project) => (
+            {DatosPortafolio.featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -212,5 +253,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

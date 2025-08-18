@@ -10,7 +10,7 @@ export function ProjectCard({ project }) {
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       <div className="aspect-video relative overflow-hidden">
         <Image
-          src={project.image || "/placeholder.svg"}
+          src={project.image}
           alt={project.title}
           fill
           className="object-cover hover:scale-105 transition-transform duration-300"
