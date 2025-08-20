@@ -1,9 +1,15 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github, Info } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function ProjectCard({ project }) {
   return (
@@ -19,7 +25,9 @@ export function ProjectCard({ project }) {
 
       <CardHeader>
         <CardTitle className="line-clamp-1">{project.title}</CardTitle>
-        <CardDescription className="line-clamp-2">{project.description}</CardDescription>
+        <CardDescription className="line-clamp-2">
+          {project.description}
+        </CardDescription>
       </CardHeader>
 
       <CardContent>
@@ -38,14 +46,33 @@ export function ProjectCard({ project }) {
               Demo
             </Link>
           </Button>
-          <Button asChild variant="outline" size="sm" className="flex-1 bg-transparent">
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="flex-1 bg-transparent"
+          >
             <Link href={project.githubUrl} target="_blank">
               <Github className="mr-2 h-4 w-4" />
               Código
             </Link>
           </Button>
         </div>
+
+        <div className="flex justify-center py-2">
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="flex-1 bg-transparent"
+          >
+            <Link href={`/projects/${project.slug}`}>
+              <Info className="mr-2 h-4 w-4" />
+              Detalles del proyecto
+            </Link>
+          </Button>
+        </div>
       </CardContent>
     </Card>
-  )
+  );
 }

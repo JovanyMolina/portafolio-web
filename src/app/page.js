@@ -18,6 +18,7 @@ import {
   Palette,
   Database,
   Bot,
+  FileDown,
 } from "lucide-react";
 import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
@@ -49,6 +50,19 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 bg-transparent"
+            >
+              <Link href="/CV-JovanyMolina.pdf" download>
+                <FileDown className="mr-2 h-5 w-5" />
+                Descargar CV
+              </Link>
+            </Button>
+
             <Button
               asChild
               variant="outline"
@@ -109,13 +123,13 @@ export default function HomePage() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-4 bg-muted/20">
+      <section className="py-20 px-4 bg-muted/20 ">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12">
             Habilidades Técnicas
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 ">
             <Card>
               <CardHeader className="text-center">
                 <Code className="h-12 w-12 mx-auto mb-4 text-primary" />
@@ -244,8 +258,8 @@ export default function HomePage() {
 
           <div className="text-center">
             <Button asChild size="lg" variant="outline">
-              <Link href="/proyectos">
-                Ver Todos los Proyectos
+              <Link href="/projects">
+                Ver todos los proyectos
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

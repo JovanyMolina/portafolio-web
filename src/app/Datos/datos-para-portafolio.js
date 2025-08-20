@@ -31,7 +31,7 @@ const featuredProjects = [
     title: "E-commerce Moderno",
     description:
       "Tienda online completa con carrito de compras, pagos y panel de administración.",
-    image: "",
+    image: "/test1.jpg",
     tags: ["Next.js", "Stripe", "MongoDB"],
     demoUrl: "https://demo-ecommerce.vercel.app",
     githubUrl: "https://github.com/usuario/ecommerce",
@@ -46,7 +46,7 @@ const projectsData = {
       "Una tienda online completa construida con las últimas tecnologías web.",
     longDescription:
       "Este proyecto representa una solución completa de e-commerce que incluye todas las funcionalidades esenciales para una tienda online moderna. Desde la gestión de productos hasta el procesamiento de pagos, cada aspecto ha sido cuidadosamente diseñado para ofrecer la mejor experiencia tanto a usuarios como administradores.",
-    images: ["", "", ""],
+    images: ["/test1.jpg", "/test2.jpg"],
     tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
     demoUrl: "https://demo-ecommerce.vercel.app",
     githubUrl: "https://github.com/usuario/ecommerce",
@@ -83,7 +83,7 @@ const allProjects = [
     title: "E-commerce Moderno",
     description:
       "Tienda online completa con carrito de compras, sistema de pagos integrado con Stripe, panel de administración para gestión de productos y órdenes.",
-    image: "",
+    image: "/test1.jpg",
     tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
     demoUrl: "https://demo-ecommerce.vercel.app",
     githubUrl: "https://github.com/usuario/ecommerce",
