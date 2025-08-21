@@ -25,7 +25,7 @@ export function ProjectCard({ project }) {
 
       <CardHeader>
         <CardTitle className="line-clamp-1">{project.title}</CardTitle>
-        <CardDescription className="line-clamp-2">
+        <CardDescription className="line-clamp-none">
           {project.description}
         </CardDescription>
       </CardHeader>
