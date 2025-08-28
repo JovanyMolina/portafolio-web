@@ -50,7 +50,7 @@ export default async function ProjectDetailPage(props) {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
       <Button asChild variant="ghost" className="mb-8">
-        <Link href="/proyectos">
+        <Link href="/projects">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Volver a Proyectos
         </Link>

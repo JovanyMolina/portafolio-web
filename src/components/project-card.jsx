@@ -18,7 +18,9 @@ export function ProjectCard({ project }) {
         <Image
           src={project.image}
           alt={project.title}
-          fill
+          width={700}
+          height={300}
+          priority={false}
           className="object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
