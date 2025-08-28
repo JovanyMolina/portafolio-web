@@ -22,7 +22,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const project = DatosPortafolio.projectsData[params.slug];
 
   if (!project) {
@@ -37,7 +38,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function ProjectDetailPage({ params }) {
+export default async function ProjectDetailPage(props) {
+  const params = await props.params;
   const project = DatosPortafolio.projectsData[params.slug];
 
   if (!project) {
