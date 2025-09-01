@@ -126,8 +126,8 @@ const projectsData = {
     description: "",
     longDescription: "",
     images: [
-      "/textilapp/inicio.png",
-      "/textilapp/inicio2.png",
+      "/textilapp/Inicio.png",
+      "/textilapp/Inicio2.png",
       "/textilapp/catalogo.png",
       "/textilapp/pageGHBack.png",
       "/textilapp/pageGHFront.png",
