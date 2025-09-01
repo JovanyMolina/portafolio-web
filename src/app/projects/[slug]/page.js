@@ -33,7 +33,7 @@ export async function generateMetadata(props) {
   }
 
   return {
-    title: `${project.title} | Mi Portafolio`,
+    title: `${project.title}  Mi Portafolio`,
     description: project.description,
   };
 }
