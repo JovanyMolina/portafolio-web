@@ -51,7 +51,7 @@ const featuredProjects = [
     title: "Textilapp",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
-    image: "/textilapp/inicio.png",
+    image: "/textilapp/Inicio.png",
     tags: [
       "En construcción",
       "Vite",
@@ -257,7 +257,7 @@ const allProjects = [
     title: "Textilapp",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
-    image: "/textilapp/inicio.png",
+    image: "/textilapp/Inicio.png",
     tags: [
       "En construcción",
       "Vite",
