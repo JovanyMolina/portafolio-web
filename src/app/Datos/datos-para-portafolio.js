@@ -51,7 +51,7 @@ const featuredProjects = [
     title: "Textilapp",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
-    image: "/test1.jpg",
+    image: "/textilapp/inicio.png",
     tags: [
       "En construcción",
       "Vite",
@@ -125,7 +125,13 @@ const projectsData = {
     title: "",
     description: "",
     longDescription: "",
-    images: ["/test1.jpg", "/test2.jpg", "/test2.jpg", "/test1.jpg"],
+    images: [
+      "/textilapp/inicio.png",
+      "/textilapp/inicio2.png",
+      "/textilapp/catalogo.png",
+      "/textilapp/pageGHBack.png",
+      "/textilapp/pageGHFront.png",
+    ],
     tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
     demoUrl: "https://demo-ecommerce.vercel.app",
     githubUrl: "https://github.com/JovanyMolina/notaposweb",
@@ -251,7 +257,7 @@ const allProjects = [
     title: "Textilapp",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
-    image: "/test1.jpg",
+    image: "/textilapp/inicio.png",
     tags: [
       "En construcción",
       "Vite",
