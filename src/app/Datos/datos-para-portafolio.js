@@ -147,9 +147,9 @@ const projectsData = {
     lessons: ["En construcción"],
   },
   "simulador-sat-y-bot": {
-    title: "En construcción",
-    description: "En construcción",
-    longDescription: "En construcción",
+    title: "Simulador SAT y bot",
+    description:
+      "El proyecto consiste en hacer un clon de la página web del SAT, que incluye algunas funciones como cargar CFDI's, verificar, etc., además de un bot para automatizar el proceso de carga y descarga de los CFDI.",
     images: [
       "/simulador-SAT-bot/cloneSAT.png",
       "/simulador-SAT-bot/clonSAT2.png",
@@ -157,15 +157,15 @@ const projectsData = {
       "/simulador-SAT-bot/codigoBot.png",
       "/simulador-SAT-bot/pageGH.png",
     ],
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
+    tags: ["Next.js", "Tailwind CSS", "Puppeteer", "Node.js", "Axios", "Font Awesome", "React", "JavaScript" ,],
     demoUrl: "/repositorio-privado",
-    /* githubUrl: "", */
     githubUrl: "/repositorio-privado",
-    duration: "",
-    role: "Full Stack Developer",
-    objectives: ["En construcción"],
-    features: ["En construcción"],
-    lessons: ["En construcción"],
+    duration: "6 Meses",
+    role: "Desarrollador Full Stack",
+    objectives: ["El objetivo de este proyecto fue desarrollar un bot para la empresa Softwareland, el cual será implementado en la página oficial del SAT con el propósito de mejorar y optimizar el proceso de carga y descarga de los CFDI's en un sistema ya existente que cuenta con su propia API. Anteriormente, este proceso se realizaba de forma manual, lo que generaba pérdidas significativas de tiempo al tener que cargar y firmar los comprobantes directamente en el portal del SAT. Además, al depender del trabajo humano, existía un mayor riesgo de errores, lo que podía implicar duplicar el tiempo invertido en completar la tarea. Con la integración del bot, se espera mejorar la eficiencia del proceso hasta en un 80 %, ya que la automatización reducirá significativamente la intervención humana. Finalmente, el cliente únicamente recibirá una notificación por correo electrónico indicando si su CFDI fue aceptado o rechazado, simplificando así toda la experiencia."],
+    features: ["Automatización del proceso de carga y descarga de CFDI's en la página del SAT.", "Integración con la API existente del sistema del cliente para una comunicación fluida.", "Reducción significativa del tiempo invertido en el proceso, mejorando la eficiencia hasta en un 80 %.", "Minimización de errores humanos al automatizar tareas repetitivas.", "Notificaciones por correo electrónico para informar al cliente sobre el estado de sus CFDI's."],
+    lessons: ["Aprendizaje sobre la automatización de procesos utilizando Puppeteer.", "Importancia de la integración con APIs existentes para mejorar la funcionalidad.", "Optimización del rendimiento y eficiencia en tareas repetitivas.", "Manejo de errores y excepciones en procesos automatizados.", "Comunicación efectiva con el cliente a través de notificaciones."],
+    longDescription: ["El proyecto tiene como finalidad desarrollar un bot y crear un entorno de pruebas que permita simular su funcionamiento real. Este proyecto tuvo una duración de 6 meses y fue realizado como parte de las residencias profesionales universitarias 2025, en la empresa de Softwareland."]
   },
   "sistema-de-asistencias": {
     title: "En construcción",
@@ -182,9 +182,9 @@ const projectsData = {
     lessons: ["En construcción"],
   },
   pvcelulares: {
-    title: "En construcción",
-    description: "En construcción",
-    longDescription: "En construcción",
+    title: "PVCelulares",
+    description: "El proyecto consiste en el desarrollo de un sistema de punto de venta diseñado para un negocio de reparación de teléfonos, laptops y tabletas. Además de gestionar las ventas, la plataforma permite llevar un control completo del inventario y facilita el proceso de cobro a los clientes.",
+    longDescription: "El sistema de punto de venta para PVCelulares aborda la necesidad de una gestión eficiente en un negocio de reparación de dispositivos electrónicos. Al centralizar las funciones de ventas, inventario y cobro, el sistema mejora la operatividad del negocio, reduce errores humanos y optimiza el tiempo dedicado a la administración. Esto permite a los empleados enfocarse más en la atención al cliente y en la calidad del servicio ofrecido.",
     images: [
       "/pvcelular/panel.png",
       "/pvcelular/inventario.png",
@@ -203,9 +203,9 @@ const projectsData = {
     githubUrl: "https://github.com/JovanyMolina/PVCelulares",
     duration: "",
     role: "Full Stack Developer",
-    objectives: ["En construcción"],
-    features: ["En construcción"],
-    lessons: ["En construcción"],
+    objectives: ["El objetivo principal del proyecto fue desarrollar un sistema de punto de venta completo para un negocio de reparación de dispositivos electrónicos. Este sistema debía permitir la gestión eficiente de inventario, el registro y seguimiento de reparaciones, así como la generación de tickets de venta para facilitar el proceso de cobro a los clientes."],
+    features: ["Gestión de inventario de productos y repuestos", "Registro y seguimiento de reparaciones", "Generación de tickets de venta", "Gestión de usuarios con diferentes roles y permisos", "Interfaz amigable y fácil de usar"],
+    lessons: ["Importancia de una buena gestión de inventario en un negocio de reparaciones", "Desarrollo de sistemas de punto de venta eficientes", "Implementación de roles y permisos para usuarios", "Optimización del proceso de ventas y cobro", "Aprendizaje en el uso de PHP y MySQL para aplicaciones web", "Manejo de la libreria FPDF para la generación de tickets en PDF" , "Diseño de interfaces con Bootstrap para mejorar la experiencia del usuario"],
   },
   toolvin: {
     title: "En construcción",
