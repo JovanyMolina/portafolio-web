@@ -28,10 +28,10 @@ const skills = [
 const featuredProjects = [
   {
     id: 1,
-    title: "Notaposweb",
+    title: "Notaposweb (En construcción)",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
-    image: "/proximamente.png",
+    image: "/notasposweb/panel-de-ventas.webp",
     tags: [
       "En construcción",
       "Next.js",
@@ -49,7 +49,7 @@ const featuredProjects = [
   },
   {
     id: 2,
-    title: "Textilapp",
+    title: "Textilapp (En construcción)",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
     image: "/textilapp/Inicio.webp",
@@ -94,14 +94,29 @@ const featuredProjects = [
 
 const projectsData = {
   notaposweb: {
-    title: "Notaposweb",
+    title: "Notaposweb (En construcción)",
     description:
       "Es un punto de venta para un negocio local de papelería donde los usuarios pueden gestionar sus ventas, productos, descuentos y más.",
     longDescription:
       "Este proyecto soluciona los problemas de gestión de ventas y productos en una papelería local, permitiendo a los usuarios llevar un control eficiente de su inventario y ventas.",
-    images: ["/proximamente.png"],
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
-    demoUrl: "https://demo-ecommerce.vercel.app",
+    images: [
+      "/notasposweb/login.webp",
+      "/notasposweb/panel-de-ventas.webp",
+      "/notasposweb/clientes.webp",
+      "/notasposweb/empleado.webp",
+      "/notasposweb/inicio.webp",
+      "/notasposweb/inventario.webp",
+    ],
+    tags: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "MySQL",
+      "AG-Grid",
+      "Font Awesome",
+      "SweetAlert2",
+    ],
+    demoUrl: "/en-construccion",
     /*  githubUrl: "https://github.com/JovanyMolina/notaposweb", */
     githubUrl: "/repositorio-privado",
     duration: "en construcción",
@@ -331,10 +346,10 @@ const projectsData = {
 const allProjects = [
   {
     id: 1,
-    title: "Notaposweb",
+    title: "Notaposweb (En construcción)",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
-    image: "/proximamente.png",
+    image: "/notasposweb/panel-de-ventas.webp",
     tags: [
       "En construcción",
       "Next.js",
@@ -345,14 +360,14 @@ const allProjects = [
       "Font Awesome",
       "SweetAlert2",
     ],
-    demoUrl: "/project/*",
+    demoUrl: "/en-construccion",
     /*  githubUrl: "https://github.com/JovanyMolina/notaposweb", */
     githubUrl: "/repositorio-privado",
     slug: "notaposweb",
   },
   {
     id: 2,
-    title: "Textilapp",
+    title: "Textilapp (En construcción)",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
     image: "/textilapp/Inicio.webp",
