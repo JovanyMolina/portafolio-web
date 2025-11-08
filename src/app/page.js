@@ -28,10 +28,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero*/}
-      <section className="py-20 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-30 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="container mx-auto max-w-4xl text-center">
-          <Avatar className="w-32 h-32 mx-auto mb-8">
-            <AvatarImage src="" alt="Mi foto" />
+          <Avatar className="w-62 h-62 mx-auto mb-10 justify-center">
+            <AvatarImage src="perfil.webp" alt="Perfil" />
             <AvatarFallback className="text-2xl">JM</AvatarFallback>
           </Avatar>
 
@@ -40,7 +40,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Desarrollador Full Stack | Desarrollo de software
+            Ingeniero en sistemas computacionales
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -77,17 +77,17 @@ export default function HomePage() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="sm" asChild>
+            <Button  size="lg" asChild>
               <Link href="https://github.com/JovanyMolina" target="_blank">
-                <Github className="h-5 w-5" />
+                <Github className="h-96 w-96" />
               </Link>
             </Button>
-            <Button variant="ghost" size="sm" asChild>
+            <Button  size="lg" asChild>
               <Link
                 href="https://www.linkedin.com/in/jovany-molina-vieyra/"
                 target="_blank"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-96 w-96" />
               </Link>
             </Button>
           </div>
