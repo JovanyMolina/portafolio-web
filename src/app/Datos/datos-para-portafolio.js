@@ -265,32 +265,66 @@ const projectsData = {
     lessons: ["En construcción"],
   },
   "portafolio-web": {
-    title: "En construcción",
-    description: "En construcción",
-    longDescription: "En construcción",
+    title:
+      "Portafolio web personal para mostrar mis proyectos y habilidades actuales.",
+    description:
+      "Este proyecto es mi portafolio web personal, donde muestro todos mis proyectos mas destacados y experiencias laboral así como mis habilidades técnicas.",
+    longDescription:
+      "Este portafolio web fue creado para tener una presencia en línea profesional y mostrar mis proyectos personales como tambien de trabajos realizados para clientes. ",
     images: ["/proximamente.png"],
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Node.js",
+      "Shadcn UI",
+      "Lucide-react",
+    ],
     demoUrl: "portafolio-web-pied-eight.vercel.app",
     githubUrl: "https://github.com/JovanyMolina/portafolio-web",
-    duration: "",
+    duration: "3 Meses y en constante actualización",
     role: "Full Stack Developer",
-    objectives: ["En construcción"],
-    features: ["En construcción"],
-    lessons: ["En construcción"],
+    objectives: [
+      "El objetivo principal es destacar mis habilidades y experiencia en desarrollo web, así como proporcionar una forma fácil para que los posibles clientes puedan contactarme.",
+    ],
+    features: ["Diseño responsivo", "Sección de proyectos"],
+    lessons: [
+      "Importancia de una buena presentación en línea",
+      "Optimización para SEO",
+      "Mejora continua del portafolio",
+    ],
   },
   "scraping-de-informacion-para-facebook": {
     title: "Scraping de información para Facebook",
-    description: "En construcción",
-    longDescription: "En construcción",
+    description:
+      "El proyecto consiste en desarrollar un sistema de scraping para recolectar datos de Facebook utilizando Puppeteer, teniendo encuenta estar logueado en una cuenta de Facebook.",
+    longDescription:
+      "Este proyecto fue desarrollado para practicar y aprender sobre el web scraping utilizando Puppeteer. El sistema permite extraer información específica de Facebook, lo que puede ser útil para análisis de datos y extraerlos en un formato estructurado como Excel.",
     images: ["/proximamente.png"],
-    tags: ["Next.js", "JavaScript", "Puppeteer", "Node.js", "Excel"],
+    tags: [
+      "Node.js",
+      "Puppeteer",
+      "JavaScript",
+      "Dotenv",
+      "Excel",
+      "Nodemon",
+      "React",
+    ],
     demoUrl: "/en-construccion",
     githubUrl: "/en-construccion",
-    duration: "",
+    duration: "2 semanas",
     role: "Full Stack Developer",
-    objectives: ["En construcción"],
-    features: ["En construcción"],
-    lessons: ["En construcción"],
+    objectives: [
+      "Aprender sobre web scraping con Puppeteer",
+      "Extraer datos de Facebook",
+      "Guardar los datos en un archivo Excel",
+    ],
+    features: [
+      "Extracción de datos de Facebook",
+      "Generación de archivo Excel con los datos recolectados",
+    ],
+    lessons: ["Aprendizaje sobre Puppeteer y web scraping"],
   },
 };
 
@@ -344,7 +378,7 @@ const allProjects = [
     title: "Simulador SAT y bot",
     description:
       "Clon de la pagina web del SAT, con funcionalidad de de cargar/descarga de los CFDI, y un Bot para automatizar procesos.",
-    image: "/simulador-SAT-bot/cloneSAT.png",
+    image: "/simulador-SAT-bot/cloneSAT.webp",
     tags: [
       "Next.js",
       "Node.js",
