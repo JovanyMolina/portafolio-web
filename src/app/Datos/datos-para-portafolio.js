@@ -265,7 +265,7 @@ const projectsData = {
       "Diseño de interfaces con Bootstrap para mejorar la experiencia del usuario",
     ],
   },
-  toolvin: {
+  /*   toolvin: {
     title: "En construcción",
     description: "En construcción",
     longDescription: "En construcción",
@@ -278,7 +278,7 @@ const projectsData = {
     objectives: ["En construcción"],
     features: ["En construcción"],
     lessons: ["En construcción"],
-  },
+  }, */
   "portafolio-web": {
     title:
       "Portafolio web personal para mostrar mis proyectos y habilidades actuales.",
@@ -428,7 +428,7 @@ const allProjects = [
     githubUrl: "https://github.com/JovanyMolina/PVCelulares",
     slug: "pvcelulares",
   },
-  {
+  /*   {
     id: 6,
     title: "TOOLVIN",
     description: "Sistema para la gestión de ventas de herramientas",
@@ -437,7 +437,7 @@ const allProjects = [
     demoUrl: "/en-construccion",
     githubUrl: "https://github.com/ElHuachi/5S6A-ING.DE-SOFTWARE",
     slug: "toolvin",
-  },
+  }, */
   {
     id: 7,
     title: "Portafolio web",

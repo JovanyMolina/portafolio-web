@@ -12,9 +12,9 @@ import {
   Target,
   Lightbulb,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import DatosPortafolio from "@/app/Datos/datos-para-portafolio";
+import ClickableImage from "@/components/ClickableImage";
 
 export async function generateStaticParams() {
   return Object.keys(DatosPortafolio.projectsData).map((slug) => ({
@@ -90,28 +90,20 @@ export default async function ProjectDetailPage(props) {
       {/* Project Images */}
       <div className="mb-12">
         <div className="grid gap-4">
-          <div className="aspect-video relative overflow-hidden rounded-lg">
-            <Image
-              src={project.images[0] || "/placeholder.svg"}
-              alt={`${project.title} - Vista principal`}
-              fill
-              className="object-cover"
-            />
-          </div>
+          <ClickableImage
+            src={project.images[0]}
+            alt={`${project.title} - Vista principal`}
+            className="aspect-video"
+          />
           {project.images.length > 1 && (
             <div className="grid grid-cols-2 gap-4">
               {project.images.slice(1).map((image, index) => (
-                <div
+                <ClickableImage
                   key={index}
-                  className="aspect-video relative overflow-hidden rounded-lg"
-                >
-                  <Image
-                    src={image || "/placeholder.svg"}
-                    alt={`${project.title} - Vista ${index + 2}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                  src={image}
+                  alt={`${project.title} - Vista ${index + 2}`}
+                  className="aspect-video"
+                />
               ))}
             </div>
           )}
