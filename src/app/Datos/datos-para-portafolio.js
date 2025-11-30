@@ -28,10 +28,21 @@ const skills = [
 const featuredProjects = [
   {
     id: 1,
-    title: "Notaposweb",
+    title: "Registros de empleados",
+    description:
+      "Es un sistema de registro de asistencia y conteo de horas trabajadas para empleados.",
+    image: "/registros-de-empleados/registro-de-empleado.webp",
+    tags: ["php", "MySQL", "JavaScript", "CSS"],
+    demoUrl: "/project/*",
+    githubUrl: "https://github.com/Abru69/Registro_de_empleados",
+    slug: "Registros-de-empleados",
+  },
+  {
+    id: 2,
+    title: "Notaposweb (En construcción)",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
-    image: "/proximamente.png",
+    image: "/notasposweb/panel-de-ventas.webp",
     tags: [
       "En construcción",
       "Next.js",
@@ -48,8 +59,8 @@ const featuredProjects = [
     slug: "notaposweb",
   },
   {
-    id: 2,
-    title: "Textilapp",
+    id: 3,
+    title: "Textilapp (En construcción)",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
     image: "/textilapp/Inicio.webp",
@@ -70,8 +81,8 @@ const featuredProjects = [
     githubUrl: "/repositorio-privado",
     slug: "textilapp",
   },
-  {
-    id: 3,
+  /*   {
+    id: 4,
     title: "Simulador SAT y bot",
     description:
       "Clon de la pagina web del SAT, con funcionalidad de de cargar/descarga de los CFDI, y un Bot para automatizar procesos.",
@@ -89,19 +100,72 @@ const featuredProjects = [
     demoUrl: "/repositorio-privado",
     githubUrl: "/repositorio-privado",
     slug: "simulador-sat-y-bot",
-  },
+  }, */
 ];
 
 const projectsData = {
+  "Registros-de-empleados": {
+    title: "Registros de empleados",
+    description:
+      "Es un sistema de registro de asistencia y conteo de horas trabajadas para empleados.",
+    longDescription:
+      "Es un sistema que permite registrar la asistencia de los empleados y llevar un control de las horas trabajadas por cada uno de ellos. Este proyecto fue desarrollado para un cliente como free-lance, con el objetivo de optimizar la gestión del tiempo como objetivo principal.",
+    images: [
+      "/registros-de-empleados/registro-de-empleado.webp",
+      "/registros-de-empleados/panel-admin-1.webp",
+      "/registros-de-empleados/panel-admin-2.webp",
+      "/registros-de-empleados/login.webp",
+      "/registros-de-empleados/ExcelHorasPorSemana.webp",
+      "/registros-de-empleados/ExcelAsistenciaEmpleados.webp",
+    ],
+    tags: ["php", "MySQL", "JavaScript", "CSS"],
+    demoUrl: "/project/*",
+    githubUrl: "https://github.com/Abru69/Registro_de_empleados",
+    duration: "17 dias",
+    role: "Desarrollador Full Stack",
+    objectives: [
+      "Contar con un sistema que registre la asistencia y horas trabajadas de los empleados.",
+      "Filtros de búsqueda por fecha y empleado.",
+      "Generación de reportes en formato EXCEL.",
+    ],
+    features: [
+      "Registro de entrada y salida de empleados.",
+      "Contar las horas que hace cada empleado.",
+      "Generación de reportes en formato EXCEL.",
+    ],
+    lessons: [
+      "Aprendizaje continuo en PHP, MySQL y arquitectura MVC.",
+      "Importancia de una buena gestión de datos.",
+      "Filtros y generación de reportes.",
+      "Manejo de fechas y horas en programación.",
+      "Optimización de la comunicación con el cliente.",
+      "Trabajo en equipo",
+    ],
+  },
   notaposweb: {
-    title: "Notaposweb",
+    title: "Notaposweb (En construcción)",
     description:
       "Es un punto de venta para un negocio local de papelería donde los usuarios pueden gestionar sus ventas, productos, descuentos y más.",
     longDescription:
       "Este proyecto soluciona los problemas de gestión de ventas y productos en una papelería local, permitiendo a los usuarios llevar un control eficiente de su inventario y ventas.",
-    images: ["/proximamente.png"],
-    tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
-    demoUrl: "https://demo-ecommerce.vercel.app",
+    images: [
+      "/notasposweb/login.webp",
+      "/notasposweb/panel-de-ventas.webp",
+      "/notasposweb/clientes.webp",
+      "/notasposweb/empleado.webp",
+      "/notasposweb/inicio.webp",
+      "/notasposweb/inventario.webp",
+    ],
+    tags: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "MySQL",
+      "AG-Grid",
+      "Font Awesome",
+      "SweetAlert2",
+    ],
+    demoUrl: "/en-construccion",
     /*  githubUrl: "https://github.com/JovanyMolina/notaposweb", */
     githubUrl: "/repositorio-privado",
     duration: "en construcción",
@@ -250,7 +314,7 @@ const projectsData = {
       "Diseño de interfaces con Bootstrap para mejorar la experiencia del usuario",
     ],
   },
-  toolvin: {
+  /*   toolvin: {
     title: "En construcción",
     description: "En construcción",
     longDescription: "En construcción",
@@ -263,7 +327,7 @@ const projectsData = {
     objectives: ["En construcción"],
     features: ["En construcción"],
     lessons: ["En construcción"],
-  },
+  }, */
   "portafolio-web": {
     title:
       "Portafolio web personal para mostrar mis proyectos y habilidades actuales.",
@@ -331,10 +395,21 @@ const projectsData = {
 const allProjects = [
   {
     id: 1,
-    title: "Notaposweb",
+    title: "Registros de empleados",
+    description:
+      "Es un sistema de registro de asistencia y conteo de horas trabajadas para empleados.",
+    image: "/registros-de-empleados/registro-de-empleado.webp",
+    tags: ["php", "MySQL", "JavaScript", "CSS"],
+    demoUrl: "/project/*",
+    githubUrl: "https://github.com/Abru69/Registro_de_empleados",
+    slug: "Registros-de-empleados",
+  },
+  {
+    id: 2,
+    title: "Notaposweb (En construcción)",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
-    image: "/proximamente.png",
+    image: "/notasposweb/panel-de-ventas.webp",
     tags: [
       "En construcción",
       "Next.js",
@@ -345,14 +420,14 @@ const allProjects = [
       "Font Awesome",
       "SweetAlert2",
     ],
-    demoUrl: "/project/*",
+    demoUrl: "/en-construccion",
     /*  githubUrl: "https://github.com/JovanyMolina/notaposweb", */
     githubUrl: "/repositorio-privado",
     slug: "notaposweb",
   },
   {
-    id: 2,
-    title: "Textilapp",
+    id: 3,
+    title: "Textilapp (En construcción)",
     description:
       "Pagina web sobre ropa con carrito de compras, pagos y panel de administración para diferentes usuarios.",
     image: "/textilapp/Inicio.webp",
@@ -374,7 +449,7 @@ const allProjects = [
     slug: "textilapp",
   },
   {
-    id: 3,
+    id: 4,
     title: "Simulador SAT y bot",
     description:
       "Clon de la pagina web del SAT, con funcionalidad de de cargar/descarga de los CFDI, y un Bot para automatizar procesos.",
@@ -394,7 +469,7 @@ const allProjects = [
     slug: "simulador-sat-y-bot",
   },
   {
-    id: 4,
+    id: 5,
     title: "Sistema de Asistencias",
     description: "Sistema para la gestión de asistencias en una institución",
     image: "/proximamente.png",
@@ -404,7 +479,7 @@ const allProjects = [
     slug: "sistema-de-asistencias",
   },
   {
-    id: 5,
+    id: 6,
     title: "PVCelulares",
     description: "Sistema para la gestión de ventas/reparación de celulares",
     image: "/pvcelular/panel.webp",
@@ -413,7 +488,7 @@ const allProjects = [
     githubUrl: "https://github.com/JovanyMolina/PVCelulares",
     slug: "pvcelulares",
   },
-  {
+  /*   {
     id: 6,
     title: "TOOLVIN",
     description: "Sistema para la gestión de ventas de herramientas",
@@ -422,7 +497,7 @@ const allProjects = [
     demoUrl: "/en-construccion",
     githubUrl: "https://github.com/ElHuachi/5S6A-ING.DE-SOFTWARE",
     slug: "toolvin",
-  },
+  }, */
   {
     id: 7,
     title: "Portafolio web",
