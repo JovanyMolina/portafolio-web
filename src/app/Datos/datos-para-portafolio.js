@@ -31,7 +31,7 @@ const featuredProjects = [
     title: "Registros de empleados",
     description:
       "Es un sistema de registro de asistencia y conteo de horas trabajadas para empleados.",
-    image: "/registros-de-empleados/registro-de-empleado.webp",
+    image: "/Registros-de-empleados/registro-de-empleado.webp",
     tags: ["php", "MySQL", "JavaScript", "CSS"],
     demoUrl: "/project/*",
     githubUrl: "https://github.com/Abru69/Registro_de_empleados",
@@ -111,12 +111,12 @@ const projectsData = {
     longDescription:
       "Es un sistema que permite registrar la asistencia de los empleados y llevar un control de las horas trabajadas por cada uno de ellos. Este proyecto fue desarrollado para un cliente como free-lance, con el objetivo de optimizar la gestión del tiempo como objetivo principal.",
     images: [
-      "/registros-de-empleados/registro-de-empleado.webp",
-      "/registros-de-empleados/panel-admin-1.webp",
-      "/registros-de-empleados/panel-admin-2.webp",
-      "/registros-de-empleados/login.webp",
-      "/registros-de-empleados/ExcelHorasPorSemana.webp",
-      "/registros-de-empleados/ExcelAsistenciaEmpleados.webp",
+      "/Registros-de-empleados/registro-de-empleado.webp",
+      "/Registros-de-empleados/panel-admin-1.webp",
+      "/Registros-de-empleados/panel-admin-2.webp",
+      "/Registros-de-empleados/login.webp",
+      "/Registros-de-empleados/ExcelHorasPorSemana.webp",
+      "/Registros-de-empleados/ExcelAsistenciaEmpleados.webp",
     ],
     tags: ["php", "MySQL", "JavaScript", "CSS"],
     demoUrl: "/project/*",
@@ -398,7 +398,7 @@ const allProjects = [
     title: "Registros de empleados",
     description:
       "Es un sistema de registro de asistencia y conteo de horas trabajadas para empleados.",
-    image: "/registros-de-empleados/registro-de-empleado.webp",
+    image: "/Registros-de-empleados/registro-de-empleado.webp",
     tags: ["php", "MySQL", "JavaScript", "CSS"],
     demoUrl: "/project/*",
     githubUrl: "https://github.com/Abru69/Registro_de_empleados",
