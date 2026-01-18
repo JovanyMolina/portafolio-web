@@ -150,10 +150,15 @@ const projectsData = {
     images: [
       "/notasposweb/login.webp",
       "/notasposweb/panel-de-ventas.webp",
-      "/notasposweb/clientes.webp",
-      "/notasposweb/empleado.webp",
       "/notasposweb/inicio.webp",
+      "/notasposweb/empleado.webp",
       "/notasposweb/inventario.webp",
+      "/notasposweb/clientes-y-proveedores.webp",
+      "/notasposweb/ver-informacion-cliente.webp",
+      "/notasposweb/ver-informacion-proveedor.webp",
+      "/notasposweb/reportes.webp",
+      "/notasposweb/configuracion.webp",
+      "/notasposweb/excel-de-inventario.webp",
     ],
     tags: [
       "Next.js",
@@ -167,7 +172,7 @@ const projectsData = {
     demoUrl: "/en-construccion",
     /*  githubUrl: "https://github.com/JovanyMolina/notaposweb", */
     githubUrl: "/repositorio-privado",
-    duration: "en construcción",
+    duration: "7 meses con actualizaciones continuas",
     role: "Full Stack Developer",
     objectives: [
       "Desarrollar una aplicación web completa",
