@@ -77,14 +77,14 @@ export default function HomePage() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Button  size="lg" asChild>
+            <Button size="lg" asChild>
               <Link href="https://github.com/JovanyMolina" target="_blank">
                 <Github className="h-96 w-96" />
               </Link>
             </Button>
-            <Button  size="lg" asChild>
+            <Button size="lg" asChild>
               <Link
-                href="https://www.linkedin.com/in/jovany-molina-vieyra/"
+                href="https://www.linkedin.com/in/jovany-molina"
                 target="_blank"
               >
                 <Linkedin className="h-96 w-96" />
@@ -163,7 +163,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-2">
                   {DatosPortafolio.skills
                     .filter((skill) =>
-                      ["backend", "database"].includes(skill.category)
+                      ["backend", "database"].includes(skill.category),
                     )
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">
@@ -184,7 +184,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-2">
                   {DatosPortafolio.skills
                     .filter((skill) =>
-                      ["base de datos", "db", "DB"].includes(skill.category)
+                      ["base de datos", "db", "DB"].includes(skill.category),
                     )
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">
@@ -207,7 +207,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-2">
                   {DatosPortafolio.skills
                     .filter((skill) =>
-                      ["automatizacion"].includes(skill.category)
+                      ["automatizacion"].includes(skill.category),
                     )
                     .map((skill) => (
                       <Badge key={skill.name} variant="secondary">

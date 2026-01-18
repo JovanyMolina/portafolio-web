@@ -39,12 +39,11 @@ const featuredProjects = [
   },
   {
     id: 2,
-    title: "Notaposweb (En construcción)",
+    title: "Notaposweb",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
     image: "/notasposweb/panel-de-ventas.webp",
     tags: [
-      "En construcción",
       "Next.js",
       "JavaScript",
       "Tailwind CSS",
@@ -58,7 +57,7 @@ const featuredProjects = [
     githubUrl: "/repositorio-privado",
     slug: "notaposweb",
   },
-  {
+  /*   {
     id: 3,
     title: "Textilapp (En construcción)",
     description:
@@ -77,11 +76,11 @@ const featuredProjects = [
       "Api REST",
     ],
     demoUrl: "/project/*",
-    /* githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", */
+     githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", 
     githubUrl: "/repositorio-privado",
     slug: "textilapp",
-  },
-  /*   {
+  }, */
+  {
     id: 4,
     title: "Simulador SAT y bot",
     description:
@@ -100,7 +99,7 @@ const featuredProjects = [
     demoUrl: "/repositorio-privado",
     githubUrl: "/repositorio-privado",
     slug: "simulador-sat-y-bot",
-  }, */
+  },
 ];
 
 const projectsData = {
@@ -143,7 +142,7 @@ const projectsData = {
     ],
   },
   notaposweb: {
-    title: "Notaposweb (En construcción)",
+    title: "Notaposweb",
     description:
       "Es un punto de venta para un negocio local de papelería donde los usuarios pueden gestionar sus ventas, productos, descuentos y más.",
     longDescription:
@@ -188,7 +187,7 @@ const projectsData = {
       "Optimización del rendimiento y experiencia de usuario",
     ],
   },
-  textilapp: {
+  /*  textilapp: {
     title: "En construcción",
     description: "En construcción",
     longDescription: "En construcción",
@@ -200,16 +199,16 @@ const projectsData = {
       "/textilapp/pageGHFront.webp",
     ],
     tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS", "Vercel"],
-    demoUrl: "/en-construccion",
-    /* githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", */
-    /* githubUrl: "https://github.com/JuanCharlitossLopez/back-textilyapp", */
-    githubUrl: "/repositorio-privado",
+    demoUrl: "/en-construccion", */
+  /* githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", */
+  /* githubUrl: "https://github.com/JuanCharlitossLopez/back-textilyapp", */
+  /* githubUrl: "/repositorio-privado",
     duration: "",
     role: "Full Stack Developer",
     objectives: ["En construcción"],
     features: ["En construcción"],
     lessons: ["En construcción"],
-  },
+  }, */
   "simulador-sat-y-bot": {
     title: "Simulador SAT y bot",
     description:
@@ -256,7 +255,7 @@ const projectsData = {
       "El proyecto tiene como finalidad desarrollar un bot y crear un entorno de pruebas que permita simular su funcionamiento real. Este proyecto tuvo una duración de 6 meses y fue realizado como parte de las residencias profesionales universitarias 2025, en la empresa de Softwareland.",
     ],
   },
-  "sistema-de-asistencias": {
+  /*   "sistema-de-asistencias": {
     title: "En construcción",
     description: "En construcción",
     longDescription: "En construcción",
@@ -269,7 +268,7 @@ const projectsData = {
     objectives: ["En construcción"],
     features: ["En construcción"],
     lessons: ["En construcción"],
-  },
+  }, */
   pvcelulares: {
     title: "PVCelulares",
     description:
@@ -328,7 +327,7 @@ const projectsData = {
     features: ["En construcción"],
     lessons: ["En construcción"],
   }, */
-  "portafolio-web": {
+  /*  "portafolio-web": {
     title:
       "Portafolio web personal para mostrar mis proyectos y habilidades actuales.",
     description:
@@ -358,7 +357,7 @@ const projectsData = {
       "Optimización para SEO",
       "Mejora continua del portafolio",
     ],
-  },
+  }, */
   "scraping-de-informacion-para-facebook": {
     title: "Scraping de información para Facebook",
     description:
@@ -406,7 +405,7 @@ const allProjects = [
   },
   {
     id: 2,
-    title: "Notaposweb (En construcción)",
+    title: "Notaposweb",
     description:
       "Sistema de un punto de venta para un negocio local de papelería.",
     image: "/notasposweb/panel-de-ventas.webp",
@@ -425,7 +424,7 @@ const allProjects = [
     githubUrl: "/repositorio-privado",
     slug: "notaposweb",
   },
-  {
+  /* {
     id: 3,
     title: "Textilapp (En construcción)",
     description:
@@ -443,11 +442,11 @@ const allProjects = [
       "Font Awesome",
       "Api REST",
     ],
-    demoUrl: "/en-construccion",
-    /* githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", */
-    githubUrl: "/repositorio-privado",
+    demoUrl: "/en-construccion", */
+  /* githubUrl: "https://github.com/JuanCharlitossLopez/textilyapp", */
+  /*     githubUrl: "/repositorio-privado",
     slug: "textilapp",
-  },
+  }, */
   {
     id: 4,
     title: "Simulador SAT y bot",
@@ -468,7 +467,7 @@ const allProjects = [
     githubUrl: "/repositorio-privado",
     slug: "simulador-sat-y-bot",
   },
-  {
+  /*   {
     id: 5,
     title: "Sistema de Asistencias",
     description: "Sistema para la gestión de asistencias en una institución",
@@ -477,7 +476,7 @@ const allProjects = [
     demoUrl: "/en-construccion",
     githubUrl: "https://github.com/JovanyMolina/SistemaDeAsistencia",
     slug: "sistema-de-asistencias",
-  },
+  }, */
   {
     id: 6,
     title: "PVCelulares",
@@ -498,7 +497,7 @@ const allProjects = [
     githubUrl: "https://github.com/ElHuachi/5S6A-ING.DE-SOFTWARE",
     slug: "toolvin",
   }, */
-  {
+  /*  {
     id: 7,
     title: "Portafolio web",
     description:
@@ -516,7 +515,7 @@ const allProjects = [
     demoUrl: "/en-construccion",
     githubUrl: "https://github.com/JovanyMolina/portafolio-web",
     slug: "portafolio-web",
-  },
+  }, */
   {
     id: 8,
     title: "Scraping de información para Facebook",
