@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { ProjectCard } from "@/components/project-card";
 import { Search, Filter } from "lucide-react";
 import DatosPortafolio from "@/app/Datos/datos-para-portafolio";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 const allTags = [
   ...new Set(DatosPortafolio.allProjects.flatMap((project) => project.tags)),
@@ -72,7 +73,9 @@ export default function ProyectosPage() {
       {filteredProjects.length > 0 ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <AnimatedSection key={project.id} delay={0.1}>
+              <ProjectCard project={project} />
+            </AnimatedSection>
           ))}
         </div>
       ) : (
